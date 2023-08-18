@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scroll-behavior: smooth;
+    scrollbar-width: 0px;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+   display: none;
+  }
+  *::-moz-selection { /* Code for Firefox */
+  color: #a35ef7;;
+    background: #FFF;;
+  }
+  
+  *::selection {
+    color: #a35ef7;;
+    background: #FFF;;
+  }

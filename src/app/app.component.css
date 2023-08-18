@@ -1,0 +1,159 @@
+.bgColor{
+    background-color: #1D1C1D;
+    color: #FCFCFC;
+    width: 100%;
+}
+.max{
+    max-width: 33%;
+}
+
+.icon:hover{
+    color: #BB86FB;
+    border-color: #BB86FB;
+    transform: scale(1.5);
+    transition: all .5s;
+
+}
+a:hover{
+    color: #BB86FB;
+}
+.name{
+    color: #BB86FB;
+    
+}
+
+.btn{
+    background-color: #BB86FB;
+    color: #1D1C1D;
+}
+.btn:hover{
+    background-color: #a35ef7;
+    color: #1D1C1D;
+    transform: scale(1.1);
+    transition: all .5s;
+}
+.para{
+    color: #828282;
+}
+.scroll {
+	width: 60px;
+	height: 60px;
+	border: 2px solid #FFF;
+	border-radius: 50%;
+	position: relative;
+	animation: down 1.5s infinite;
+	-webkit-animation: down 1.5s infinite;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 15px;
+		left: 18px;
+		width: 18px;
+		height: 18px;
+		border-left: 2px solid #FFF;
+  	border-bottom: 2px solid #FFF;
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+@-webkit-keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+ul:before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    background: #828282;
+    position: absolute;
+    left: 4px;
+    top: 5px;
+    height: calc(100% - 10px);
+}
+ul li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+ul li:before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #828282;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    border-radius: 10px;
+}
+ul li:nth-child(1)::before{ background: #BB86FB;}
+.box:hover{
+    border-color: #BB86FB;
+    transition: all 1s;
+    .ic{
+        color: #BB86FB;
+        transition: all 1s;
+    }
+    .heroText{
+        color: #BB86FB;
+        transition: all 1s;
+    }
+  
+}
+.color{
+    background: url(../assets/colorgen.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.joke{
+    background: url(../assets/joke.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.weather{
+    background: url(../assets/weather.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tic{
+    background: url(../assets/tic.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btnimg{
+    background-color: #1D1C1D;
+}
+.btnimg:hover{
+    transform: scale(1.5);
+    transition: all 1.5s;
+    color: #FFF;
+}
